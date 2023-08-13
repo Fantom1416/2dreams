@@ -1,0 +1,636 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2DREAMS Education</title>
+    <link rel="stylesheet" href="./tuit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i onclick="hideSidebar()" class="fa-solid fa-xmark"></i>
+            <i onclick="showSidebar()" id="icon" class="fa-solid fa-bars"></i>
+            <h1>2DREAMS</h1>
+            <div></div>
+        </div>
+
+        <ul>
+            <li class="home" onclick="Home()"><a href="#">
+                    Home
+                </a></li>
+
+            <li class="about" onclick="About()"><a href="#">
+                    About
+                </a></li>
+
+            <li class="blogs" onclick="Blogs()"><a href="#">
+                    Blogs
+                </a></li>
+
+            <li class="contact" onclick="Contact()"><a href="#">
+                    Contact
+                </a></li>
+            <li class="feedback" onclick="Feedback()"><a href="#">
+                    Feedback
+                </a></li>
+        </ul>
+        <div class="inputs">
+            <input type="search" placeholder="Search">
+            <button type="submit" class="fas fa-search"></button>
+        </div>
+        <div class="nav2">
+            <input type="search" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </nav>
+    <div id="sidebar" class="sidebar">
+        <h1>Menu</h1>
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+            <a href="#">
+                <li>Feedback</li>
+            </a>
+
+        </ul>
+        <div class="plar">
+            <p>О сервисеПрессе</p>
+            <p>Авторскиеправа</p>
+
+            <p>Разработчикам</p>
+            <p>Условия использования</p>
+            <p>© 2023 Google LLC</p>
+        </div>
+        <div class="socials">
+            <a target="_blank" href="https://www.instagram.com/fant0m_luv/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://t.me/fant0M_cs">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a target="_blank" href="https://github.com/Fantom1416">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+    <!-- <div class="absoluteBox1">
+        <ul>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+            <a href="#">
+                <li>Lorem ipsum dolor</li>
+            </a>
+        </ul>
+    </div> -->
+    <div class="slider">
+        <div class="slide1">
+            <img height="100%" src="./Images/banner1.jpg" alt="">
+        </div>
+        <div class="slide1">
+            <img height="100%" src="./Images/banner2.jpg" alt="">
+        </div>
+        <div class="slide1">
+            <img height="100%" src="./Images/banner3.jpg" alt="">
+        </div>
+        <h1>VIRTUAL TOUR</h1>
+    </div>
+
+    <div class="container1">
+        <div class="turns">
+            <span class="sp1" onclick="slide()"></span>
+            <span class="sp2" onclick="slide2()"></span>
+            <span class="sp3" onclick="slide3()"></span>
+        </div>
+        <h1>SO'NGGI YANGILIKLAR</h1>
+        <div class="cardsTop">
+            <div class="card">
+                <img width="100%" src="./Images/card1.jpg" alt="">
+                <div class="cardText1">
+                    <p>Oliy ta'lim salohiyatini oshirish
+                    </p>
+                    <p>natijalarini e'lon qilindi</p>
+                </div>
+                <div class="cardText2">
+                    <p>📄 Oliy taʼlimda Erasmus+ salohiyatini</p>
+                    <p>oshirish boʻyicha 2023-yilgi tanlov</p>
+                    <p>natijalari e’lon qilindi.</p>
+                </div>
+                <div class="cardButtons">
+                    <span>8.11.2023</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card2.jpg" alt="">
+                <div class="cardText1">
+                    <p>5-kun imtihon jarayonlaridan
+                    </p>
+                    <p>fotolavhalar</p>
+                </div>
+                <div class="cardText2">
+                    <p>5-kun imtihon jarayonlaridan</p>
+                    <p> fotolavhalar</p>
+                </div>
+                <div class="cardButtons">
+                    <span>12.08.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card3.jpg" alt="">
+                <div class="cardText1">
+                    <p>Ayni kunlarda universitetimizning
+                    </p>
+                    <p>turli binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>C binodagi ta'mirlash jarayonlaridan</p>
+                    <p>fotolavha</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card4.jpg" alt="">
+                <div class="cardText1">
+                    <p>Ayni kunlarda universitetimizning
+                    </p>
+                    <p>turli binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>Ayni kunlarda universitetimizning turli</p>
+                    <p>binolarida keng ko'lamli ta'mirlash</p>
+                    <p>shlari olib borilmoqda.</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardsBottom">
+            <div class="card">
+                <img width="100%" src="./Images/lineyka2.jpg" alt="">
+                <div class="cardText1">
+                    <p>Oliy ta'lim salohiyatini oshirish
+                    </p>
+                    <p>natijalarini e'lon qilindi</p>
+                </div>
+                <div class="cardText2">
+                    <p>📄 Oliy taʼlimda Erasmus+ salohiyatini</p>
+                    <p>oshirish boʻyicha 2023-yilgi tanlov</p>
+                    <p>natijalari e’lon qilindi.</p>
+                </div>
+                <div class="cardButtons">
+                    <span>8.11.2023</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/cardPasport.jpg" alt="">
+                <div class="cardText1">
+                    <p>5-kun imtihon jarayonlaridan
+                    </p>
+                    <p>fotolavhalar</p>
+                </div>
+                <div class="cardText2">
+                    <p>5-kun imtihon jarayonlaridan</p>
+                    <p> fotolavhalar</p>
+                </div>
+                <div class="cardButtons">
+                    <span>12.08.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/hokimyat.jpg" alt="">
+                <div class="cardText1">
+                    <p>Ayni kunlarda universitetimizning
+                    </p>
+                    <p>turli binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>C binodagi ta'mirlash jarayonlaridan</p>
+                    <p>fotolavha</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card4.jpg" alt="">
+                <div class="cardText1">
+                    <p>Ayni kunlarda universitetimizning
+                    </p>
+                    <p>turli binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>Ayni kunlarda universitetimizning turli</p>
+                    <p>binolarida keng ko'lamli ta'mirlash</p>
+                    <p>shlari olib borilmoqda.</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+        </div>
+        <button class="barchasi" onclick="viewAll()">BARCHASI</button>
+
+    </div>
+    <div class="container2">
+        <h1>SO'NGGI OBNOVLENIYALAR</h1>
+        <div class="cardsTop2">
+            <div class="card">
+                <img width="100%" src="./Images/card5.jpg" alt="">
+                <div class="cardText1">
+                    <p>Oliy ta'lim salohiyatini oshirish
+                    </p>
+                    <p>natijalarini e'lon qilindi</p>
+                </div>
+                <div class="cardText2">
+                    <p>Oliy taʼlimda Erasmus+ salohiyatini</p>
+                    <p>natijalari e’lon qilindi.</p>
+                </div>
+                <div class="cardButtons">
+                    <span>8.11.2023</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card6.jpg" alt="">
+                <div class="cardText1">
+                    <p>5-kun imtihon jarayonlaridan
+                    </p>
+                    <p>fotolavhalar</p>
+                </div>
+                <div class="cardText2">
+                    <p>5-kun imtihon jarayonlaridan</p>
+                    <p> fotolavhalar</p>
+                </div>
+                <div class="cardButtons">
+                    <span>12.08.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/lineyka.jpg" alt="">
+                <div class="cardText1">
+                    <p>Ayni kunlarda universitetimizning
+                    </p>
+                    <p>turli binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>C binodagi ta'mirlash jarayonlaridan</p>
+                    <p>fotolavha</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card8.jpg" alt="">
+                <div class="cardText1">
+                    <p>Shu kunlarda universitetimizning
+                    </p>
+                    <p> binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>Ayni kunlarda universitetimizning turli</p>
+                    <p>binolarida keng ko'lamli ta'mirlash</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardsBottom2">
+            <div class="card">
+                <img width="100%" src="./Images/card8.jpg" alt="">
+                <div class="cardText1">
+                    <p>Oliy ta'lim salohiyatini oshirish
+                    </p>
+                    <p>natijalarini e'lon qilindi</p>
+                </div>
+                <div class="cardText2">
+                    <p>Oliy taʼlimda Erasmus+ salohiyatini</p>
+                    <p>natijalari e’lon qilindi.</p>
+                </div>
+                <div class="cardButtons">
+                    <span>8.11.2023</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/cardPasport.jpg" alt="">
+                <div class="cardText1">
+                    <p>5-kun imtihon jarayonlaridan
+                    </p>
+                    <p>fotolavhalar</p>
+                </div>
+                <div class="cardText2">
+                    <p>5-kun imtihon jarayonlaridan</p>
+                    <p> fotolavhalar</p>
+                </div>
+                <div class="cardButtons">
+                    <span>12.08.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/card7.jpg" alt="">
+                <div class="cardText1">
+                    <p>Ayni kunlarda universitetimizning
+                    </p>
+                    <p>turli binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>C binodagi ta'mirlash jarayonlaridan</p>
+                    <p>fotolavha</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+            <div class="card">
+                <img width="100%" src="./Images/hokimyat.jpg" alt="">
+                <div class="cardText1">
+                    <p>Shu kunlarda universitetimizning
+                    </p>
+                    <p> binolarida keng ko‘lamli</p>
+                </div>
+                <div class="cardText2">
+                    <p>Ayni kunlarda universitetimizning turli</p>
+                    <p>binolarida keng ko'lamli ta'mirlash</p>
+                </div>
+                <div class="cardButtons">
+                    <span>31.09.2022</span>
+                    <button>BATAFSIL</button>
+                </div>
+            </div>
+        </div>
+        <button class="barchasi2" onclick="viewAll2()">BARCHASI</button>
+
+    </div>
+    <div class="categories">
+        <div class="topCategories">
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <div></div>
+                    <p>VACANCIES</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div></div>
+                    <p>FACULTIES</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-handshake"></i>
+                    <div></div>
+                    <p>DEPARTMENTS</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-laptop"></i>
+                    <div></div>
+                    <p>CENTERS</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div></div>
+                    <p>APPLICANT 2021</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="bottomCategories">
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-school"></i>
+                    <div></div>
+                    <p>TO STUDENTS</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div></div>
+                    <p>TO THE RESEARCHERS</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-medal"></i>
+                    <div></div>
+                    <p>SERVICES </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <div></div>
+                    <p>DOCUMENTS</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="category">
+                    <i class="fa-solid fa-a"></i>
+                    <div></div>
+                    <p>ACM</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="container3">
+        <img width="85%" src="./Images/mainBanner.jpg" alt="">
+    </div>
+    <div class="container4">
+        <img src="./Images/toshkent.jpg" alt="">
+        <div class="qorafon">
+            <div class="leftContainer4">
+                <h2 class="abikam">AБИТУРИЕНТАМ</h2>
+                <div class="table">
+                    <i class="fa-solid fa-question"></i>
+                    <div class="text">
+                        <h3>Часто задаваемые вопросы</h3>
+                        <p>Ознакомьтесь с вопросами, часто задаваемыми</p>
+                        <p>абитуриентами.</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <i class="fa-solid fa-user-group"></i>
+                    <div class="text">
+                        <h3>Направления образования и специальности</h3>
+                        <p>Ознакомьтесь с направлениями образования,</p>
+                        <p>соответствующими кодами тестов и предметами</p>
+                        <p>экзамена</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <i class="fa-solid fa-book"></i>
+                    <div class="text">
+                        <h3>Положение о приеме</h3>
+                        <p>Ознакомьтесь с положением о приеме и нормативными</p>
+                        <p>документами</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContainer4">
+                <h2 class="studentam">СТУДЕНТАМ</h2>
+                <div class="table">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <div class="text">
+                        <h3>Oнлайн ресурсы</h3>
+                        <p>Онлайн ресурсы, электронная библиотека, дистанционное</p>
+                        <p>образование и видеоучебники для студентов</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <i class="fa-solid fa-suitcase"></i>
+                    <div class="text">
+                        <h3>Стипендии и гранты</h3>
+                        <p>Различные гранты, государственные стипендии и</p>
+                        <p>зарубежные гранты для студентов</p>
+                    </div>
+                </div>
+                <div class="table">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="text">
+                        <h3>Часто задаваемые вопросы</h3>
+                        <p>Ознакомьтесь с вопросами, часто задаваемыми</p>
+                        <p>студентами. Здесь вы можете оставить вопросы,</p>
+                        <p>связанные с учебным процессом и научной</p>
+                        <p>деятельностью</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white"></div>
+    <div class="results">
+        <div class="result">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>9</span>
+            <p>Факультеты</p>
+        </div>
+        <div class="result">
+            <i class="fa-regular fa-user"></i>
+            <span>21000
+            </span>
+            <p>Студенты</p>
+        </div>
+        <div class="result">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>1800</span>
+            <p>Учителя</p>
+        </div>
+        <div class="result">
+            <i class="fa-solid fa-suitcase"></i>
+            <span>47</span>
+            <p>Партнеры </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="topFooter">
+            <div>
+                <h1>2DREAMS</h1>
+                <h3>EDUCATION CENTER</h3>
+            </div>
+            <div>
+                <p><a href="#">WEEBLY THEMES</a></p>
+                <p><a href="#">PRESALE FAQS</a></p>
+                <p><a href="#">SUBMIT A TICKET</a></p>
+            </div>
+            <div>
+                <p><a href="#">SERVICES</a></p>
+                <p><a href="#">THEME TWEAK </a></p>
+            </div>
+            <div>
+                <p><a href="#">SHOWCASE</a></p>
+                <p><a href="#">WIDGETKIT</a></p>
+                <p><a href="#">SUPPORT</a></p>
+            </div>
+            <div>
+                <p><a href="#">ABOUT US</a></p>
+                <p><a href="#">CONTACT US</a></p>
+                <p><a href="#">AFFILIATES</a></p>
+                <p><a href="#">RESOURCES</a></p>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <div class="links">
+                <a target="_blank" href="https://www.instagram.com/fant0m_luv/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://t.me/fant0M_cs">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a target="_blank" href="https://github.com/Fantom1416">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a target="_blank" href="mailto:barnoyusupova102@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p>@Copyright. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+<script src="./tuit.js"></script>
+
+</html>
+<!-- 56_%- -->
